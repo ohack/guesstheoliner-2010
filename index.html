@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/css/main.css" />
+    <meta name="robots" content="noindex, nofollow">
+  </head>
+
+  <body>
+    <h1>People</h1>
+    
+    <table border="1">
+      <tr>
+        <th>Names</th>
+        <th>Image URLs</th>
+        <th>Groups</th>
+      </tr>
+      {% for person in people %}
+        <tr>
+          <td>{{person.name}}</a></td>
+          <td><img src="images/{{person.imageurl}}" height="200" /></td>
+          <td>{{person.group}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

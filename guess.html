@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>Guess the Oliner</title>
+  
+  <meta name="robots" content="noindex, nofollow">
+  
+  <style type="text/css" media="all">
+  @import "css/global.css";
+  </style>
+  
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/jtip.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<img src="/images/guess_the_oliner.jpg">
+	</div>
+  <form name="guess" action="/" method="get">
+  	<div id="picture">
+  		<img id="current_image" src="/images/{{correct_person.imageurl}}" width="185" />
+  		<p><strong>Who is it?</strong></p>
+  			<ul id="people_choices">
+  				{% for person in choice_people %}
+          <li>
+            <input type="radio" name="guess_key" id="person{{person.key}}" value="{{person.key}}" />
+            <label for="person{{person.key}}">{{person.name}}</label>
+          </li>
+          {% endfor %}
+  			</ul>
+    		<input type="hidden" name="correct_key" value="{{correct_person.key}}" />
+        <input type="submit" name="submit" class="submit" value="guess" />
+  	</div>
+  	{% if guessed %}
+    <div id="result">
+  		{% if correct_guess %}
+        <h2>Correct!</h2>
+        <p>It was <a href="/picture?person={{old_correct_person.imageurl}}&width=290" class="jTip" id="old_correct_person_right" name="{{old_correct_person.name}}:">{{old_correct_person.name}} ({{old_correct_person.group}})</a>.</p>
+      {% else %}
+        <h2>Nope!</h2>
+        <p>You guessed <a href="/picture?person={{old_guessed_person.imageurl}}&width=290" class="jTip" id="old_guessed_person_wrong" name="{{old_guessed_person.name}}:">{{old_guessed_person.name}} ({{old_guessed_person.group}})</a>.<br />It was <a href="/picture?person={{old_correct_person.imageurl}}&width=290" class="jTip" id="old_correct_person_wrong" name="{{old_correct_person.name}}:">{{old_correct_person.name}}  ({{old_correct_person.group}})</a>.</p>
+      {% endif %}
+  	</div>
+    {% endif %}
+    <div id="pick_groups">
+  		<p>Pick groups to choose from</p>
+  		<ul id="list_of_groups">
+  			<li><input type="checkbox" name="students2009" id="stu09" {{checked_groups.students2009}} /> <label for="stu09">Students -- 2009</label>
+  			<li><input type="checkbox" name="students2010" id="stu10" {{checked_groups.students2010}} /> <label for="stu10">Students -- 2010</label>
+  			<li><input type="checkbox" name="students2011" id="stu11" {{checked_groups.students2011}} /> <label for="stu11">Students -- 2011</label>
+  			<li><input type="checkbox" name="students2012" id="stu12" {{checked_groups.students2012}} /> <label for="stu12">Students -- 2012</label>
+  			<li><input type="checkbox" name="students2013" id="stu13" {{checked_groups.students2013}} /> <label for="stu13">Students -- 2013</label>
+  		</ul>
+  	</div>
+  	<div id="copyright">
+  		<img src="/images/small_logo.jpg"/>
+      <p>Made by <a href="/picture?person=gmarra.jpg&width=290" class="jTip" id="greg" name="Greg Marra:">Greg</a> and <a href="/picture?person=ekennedy.jpg&width=290" class="jTip" id="erik" name="Erik Kennedy:">Erik</a></p>
+  	</div>
+  </form>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4709324-2");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

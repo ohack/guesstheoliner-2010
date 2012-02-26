@@ -1,0 +1,49 @@
+[INFO     2009-08-27 11:42:35,917 bulkloader.py] Logging to bulkloader-log-20090827.114235
+[INFO     2009-08-27 11:42:35,925 bulkloader.py] Opening database: bulkloader-progress-20090827.114235.sql3
+[INFO     2009-08-27 11:42:35,937 adaptive_thread_pool.py] [WorkerThread-0] WorkerThread: started
+[INFO     2009-08-27 11:42:35,937 adaptive_thread_pool.py] [WorkerThread-1] WorkerThread: started
+[INFO     2009-08-27 11:42:35,938 adaptive_thread_pool.py] [WorkerThread-2] WorkerThread: started
+[INFO     2009-08-27 11:42:35,939 adaptive_thread_pool.py] [WorkerThread-3] WorkerThread: started
+[INFO     2009-08-27 11:42:35,939 adaptive_thread_pool.py] [WorkerThread-4] WorkerThread: started
+[INFO     2009-08-27 11:42:35,940 adaptive_thread_pool.py] [WorkerThread-5] WorkerThread: started
+[INFO     2009-08-27 11:42:35,940 adaptive_thread_pool.py] [WorkerThread-6] WorkerThread: started
+[DEBUG    2009-08-27 11:42:35,942 bulkloader.py] Configuring remote_api. url_path = /remote_api, servername = namethatoliner.appspot.com
+[INFO     2009-08-27 11:42:35,941 adaptive_thread_pool.py] [WorkerThread-7] WorkerThread: started
+[INFO     2009-08-27 11:42:35,942 adaptive_thread_pool.py] [WorkerThread-9] WorkerThread: started
+[INFO     2009-08-27 11:42:35,941 adaptive_thread_pool.py] [WorkerThread-8] WorkerThread: started
+[DEBUG    2009-08-27 11:42:36,030 bulkloader.py] Bulkloader using app_id: namethatoliner
+[INFO     2009-08-27 11:42:36,030 bulkloader.py] Connecting to /remote_api
+[INFO     2009-08-27 11:42:44,224 bulkloader.py] [Thread-11] ProgressTrackerThread: started
+[INFO     2009-08-27 11:42:44,225 bulkloader.py] [Thread-12] DataSourceThread: started
+[INFO     2009-08-27 11:42:44,225 bulkloader.py] Starting import; maximum 10 entities per post
+[INFO     2009-08-27 11:42:44,236 bulkloader.py] [Thread-12] DataSourceThread: exiting
+[DEBUG    2009-08-27 11:42:44,237 adaptive_thread_pool.py] [WorkerThread-0] Got work item [1-2]
+[DEBUG    2009-08-27 11:42:44,248 bulkloader.py] Waiting for worker threads to finish...
+[DEBUG    2009-08-27 11:42:45,141 bulkloader.py] [WorkerThread-0] [1-2] Transferred 2 entities in 0.9 seconds
+[DEBUG    2009-08-27 11:42:45,141 adaptive_thread_pool.py] Increasing active thread count to 2
+[DEBUG    2009-08-27 11:42:45,147 adaptive_thread_pool.py] Waiting for WorkerThread-0 to exit
+[INFO     2009-08-27 11:42:45,147 adaptive_thread_pool.py] [WorkerThread-2] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,148 adaptive_thread_pool.py] [WorkerThread-4] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,148 adaptive_thread_pool.py] [WorkerThread-3] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,149 adaptive_thread_pool.py] [WorkerThread-5] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,150 adaptive_thread_pool.py] [WorkerThread-8] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,149 adaptive_thread_pool.py] [WorkerThread-9] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,150 adaptive_thread_pool.py] [WorkerThread-7] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,151 adaptive_thread_pool.py] [WorkerThread-6] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,152 adaptive_thread_pool.py] [WorkerThread-0] WorkerThread: exiting
+[INFO     2009-08-27 11:42:45,153 adaptive_thread_pool.py] [WorkerThread-1] WorkerThread: exiting
+[DEBUG    2009-08-27 11:42:45,153 adaptive_thread_pool.py] Waiting for WorkerThread-1 to exit
+[DEBUG    2009-08-27 11:42:45,153 adaptive_thread_pool.py] Waiting for WorkerThread-2 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-3 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-4 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-5 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-6 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-7 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-8 to exit
+[DEBUG    2009-08-27 11:42:45,154 adaptive_thread_pool.py] Waiting for WorkerThread-9 to exit
+[DEBUG    2009-08-27 11:42:45,155 bulkloader.py] Waiting for progress_thread to terminate...
+[INFO     2009-08-27 11:42:45,162 bulkloader.py] [Thread-11] ProgressTrackerThread: exiting
+[DEBUG    2009-08-27 11:42:45,165 bulkloader.py] ... done.
+[INFO     2009-08-27 11:42:45,165 bulkloader.py] 2 entites total, 0 previously transferred
+[INFO     2009-08-27 11:42:45,165 bulkloader.py] 2 entities (0 bytes) transferred in 9.2 seconds
+[INFO     2009-08-27 11:42:45,166 bulkloader.py] All entities successfully transferred
